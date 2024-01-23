@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style/styles.css">
+    <title>My website</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+                <div class="logo">
+                        <img class="logo" src="../static/img/ystu.png">
+                </div>
+                <a href="/"><button class="button" id="button1">News</button></a>
+                <a href="/create"><button class="button" id="button2">Create post</button></a>
+                <a href="/info"><button class="button" id="button4">Contacts</button></a>
+        </nav>
+        <h1 class="header2">Create your post</h1>
+    </header>
+    <form method="post" action="{% url 'website:create' %}" enctype="multipart/form-data">
+        {% csrf_token %}<br>
+        <label for="name" class="lb1">Введите имя:</label>
+        <input type="text" id="name" name="name" value="{{ website.name }}" required><br>
+
+        <label class="lb2">Введите текст поста:</label>
+        <textarea id="text_data" name="text_data"></textarea><br>
+        <label for="photo" class="lb3">Прикрепите фотографию:</label>
+        <input type="file" id="photo" name="photo" required accept="image/*"> <br>
+
+        <button type="submit" class="but">Опубликовать</button>
+    </form>
+</body>
+</html>

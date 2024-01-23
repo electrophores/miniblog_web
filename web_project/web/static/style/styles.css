@@ -1,0 +1,411 @@
+body {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: white;
+}
+
+.logo img{
+    width: 79px;
+    height: 79px;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+html {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#button1 {
+    position: absolute;
+    top: 25px;
+    left: 280px;
+}
+
+#button2 {
+    position: absolute;
+    top: 25px;
+    left: 590px;
+}
+
+#button4 {
+    position: absolute;
+    top: 25px;
+    right: 240px;
+}
+
+button:hover {
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white
+}
+/*Создать запись*/
+
+label {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.lb1 {
+    position: absolute;
+    top: 180px;
+    left: 300px;
+}
+
+input[id=name] {
+    color: white;
+    width: 300px;
+    height: 25px;
+    background-color: rgb(35, 35, 35);
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 215px;
+    left: 300px;
+}
+
+.lb2 {
+    position: absolute;
+    top: 252px;
+    left: 300px;
+}
+
+textarea[id=text_data] {
+    color: white;
+    width: 800px;
+    height: 200px;
+    background-color: rgb(35, 35, 35);
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 287px;
+    left: 300px;
+}
+.lb3 {
+    position: absolute;
+    top: 500px;
+    left: 300px;
+}
+
+input[id=photo] {
+    color: white;
+    width: 100px;
+    height: 25px;
+    background-color: black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-color: black;
+    position: absolute;
+    top: 500px;
+    left: 560px;
+    cursor: pointer;
+}
+
+.but {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    width: 180px;
+    height: 30px;
+    background-color: rgb(35, 35, 35);
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: white;
+    position: absolute;
+    top: 550px;
+    left: 300px;
+    cursor: pointer;
+}
+
+/*Разработчики*/
+
+.photos1 img{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 310px;
+    left: 270px;
+}
+
+.photos2 img{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 310px;
+    right: 250px;
+}
+
+.header2 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    top: 100px;
+    left: 550px;
+}
+
+.header3 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    top: 93px;
+    left: 550px;
+}
+
+.name1 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 19px;
+    font-weight: 600;
+    position: absolute;
+    top: 190px;
+    left: 835px;
+}
+
+.name2 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 19px;
+    font-weight: 600;
+    position: absolute;
+    top: 190px;
+    left: 380px;
+}
+
+.emailinfo1{
+    position: absolute;
+    top: 220px;
+    left: 380px;
+}
+
+.emailinfo2{
+    position: absolute;
+    top: 220px;
+    left: 835px;
+}
+
+.numberinfo1{
+    position: absolute;
+    top: 240px;
+    left: 380px;
+}
+
+.numberinfo2{
+    position: absolute;
+    top: 240px;
+    left: 835px;
+}
+.vkinfo1{
+    position: absolute;
+    top: 260px;
+    left: 380px;
+}
+
+.vkinfo2{
+    position: absolute;
+    top: 260px;
+    left: 835px;
+}
+
+/*Главная страница*/
+
+.posts{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 19px;
+    font-weight: 600;
+    weight: auto;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    right: 40px;
+}
+
+.posts1{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px 100px 10px 100px;
+    background-color: rgb(35, 35, 35);
+}
+
+.photoIndex{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    margin: 10px 300px 0px 420px
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white
+}
+
+.nameofpost{
+    font-size: 24px;
+    position: absolute;
+    left: 600px;
+}
+.textofpost{
+    margin: 70px 100px 0px 100px;
+
+}
+
+/*ДЕТАЛИ ПОСТА И КОММЕНТАРИИ*/
+
+.details{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 140px 155px 10px 155px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-color: rgb(35, 35, 35);
+}
+
+.nickname{
+    font-size: 15px;
+    position: absolute;
+    left: 580px;
+}
+
+.textdetails{
+    margin: 70px 100px 0px 100px;
+}
+
+.imgdetails img{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    margin: 0px 300px 20px 380px
+}
+
+.form-comment{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px 155px 10px 155px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-color: rgb(35, 35, 35);
+}
+
+.head-comment{
+    font-size: 20px;
+    position: absolute;
+    left: 575px;
+}
+
+.ur-comm{
+    margin: 55px 0px 10px 100px;
+}
+
+.ur-name{
+    margin: 10px 0px 10px 100px;
+}
+
+.ur-email{
+    margin: 10px 0px 10px 100px;
+}
+
+textarea[id=comm_data]{
+    width: 600px;
+    height: 100px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: black;
+}
+
+input[id=comm_name]{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: black;
+}
+
+input[id=comm_email]{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: black;
+}
+
+input[id=save]{
+    margin: 5px 0px 10px 100px;
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: black;
+}
+
+.view-comm{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px 155px 10px 155px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-color: rgb(35, 35, 35);
+}
+.nameofcommentaries{
+    margin: 30px 0px 0px 100px;
+    color: rgb(255, 255, 255);
+}
+.nameofcommentaries1{
+    font-weight: 1000;
+}
+.textofcommentaries{
+    margin: 0px 0px 30px 100px;
+}
+.textofcommentaries1{
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.6);
+}
+p[id=zapicy]{
+    margin: 300px 300px 500px 500px;
+    font-size: 40px
+}

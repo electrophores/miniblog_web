@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="../static/style/styles.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="logo" src="../static/img/ystu.png">
+            </div>
+            <a href="/"><button class="button" id="button1">News</button></a>
+            <a href="/create"><button class="button" id="button2">Create post</button></a>
+            <a href="/info"><button class="button" id="button4">Contacts</button></a>
+        </nav>
+    </header>
+    <p class = "header3">Developer contacts:</p>
+    <p class = "name1">Valerij Grigor'ev</p> <p class = "name2">Evgeny Sokolov</p>
+    <p class="emailinfo1">sokolov@example.com</p> <p class="emailinfo2">valerij@example.com</p>
+    <p class="numberinfo1">+79817142880 </p> <p class="numberinfo2">+79201340178</p>
+    <p class="vkinfo1">VK: @kukykus</p> <p class="vkinfo2">VK: @liberalnaya_iguana</p>
+
+    <p>
+        <div class="photos1">
+            <img src="{% static 'img/tg1.png' %}" alt="Ксения">
+        </div>
+        <div class="photos2">
+            <img src="{% static 'img/tg2.png' %}" alt="Евгений">
+        </div>
+
+    </p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style/styles.css">
+    <title>My website</title>
+</head>
+<body>
+    <header>
+        <nav>
+                <div class="logo">
+                        <img class="logo" src="../static/img/ystu.png">
+                </div>
+                <a href="/"><button class="button" id="button1">News</button></a>
+                <a href="/create"><button class="button" id="button2">Create post</button></a>
+                <a href="/info"><button class="button" id="button4">Contacts</button></a>
+        </nav>
+    </header>
+    {% if posts.count %}
+        <ul class="posts">
+            <div class="posts1">
+                {% for post in posts%}
+                    <p class="nameofpost"><a href="{{ post.id }}">{{post.name}}</a></p>
+                    <p class="textofpost"> {{post.text_data}}</p>
+                    <img class="photoIndex" src="{{ post.photo.url }}" style="max-width: 20%;">
+                    <a href="{% url 'website:delete' post.id %}">Удалить</a></br>
+                {%endfor%}
+            </div>
+        </ul>
+    {%else%}
+        <p id="zapicy">Отсутсвуют записи</p>
+    {%endif%}
+</body>
+</html>

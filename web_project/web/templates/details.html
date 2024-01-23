@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style/styles.css">
+    <title>My website</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="logo" src="../static/img/ystu.png">
+            </div>
+            <a href="/"><button class="button" id="button1">News</button></a>
+            <a href="/create"><button class="button" id="button2">Create post</button></a>
+            <a href="/info"><button class="button" id="button4">Contacts</button></a>
+        </nav>
+    </header>
+    <div class="details">
+        <div class="nickname">
+            <h1>{{post.name}}</h1>
+        </div>
+        <div class="textdetails">
+            <p> {{post.text_data}}</p>
+        </div>
+        <div class="imgdetails">
+            <img src="{{ post.photo.url }}" style="max-width: 20%;">
+        </div>
+    </div>
+    <div class="form-comment">
+        <h3 class="head-comment">Leave a comment</h3>
+            <form method="post" action="{% url 'website:comments' post.id %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="ur-comm">
+                    <label>Enter your comment</label><br>
+                    <textarea id="comm_data" name="text_comment"></textarea>
+                </div>
+                <div class="ur-name">
+                    <label>Enter your name</label><br>
+                    <input id="comm_name" type="text" name="yourname">
+                </div>
+                <div class="ur-email">
+                    <label>Enter your email</label><br>
+                    <input id="comm_email" type="email" name="email">
+                </div>
+                <div><input id="save" type="submit"></div>
+            </form>
+    </div>
+    <div class="view-comm">
+        {% for comment in post.comments_set.all %}
+        <div class="nameofcommentaries">
+            <label class="nameofcommentaries1">{{ comment.yourname }}</label>
+        </div>
+        <div class="textofcommentaries">
+            <label class="textofcommentaries1">{{ comment.text_comment}}</label>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
